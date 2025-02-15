@@ -1,3 +1,19 @@
+/* Core styles start */
+body{
+  font-family: sans-serif;
+}
+
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.to-uppercase{
+  text-transform: uppercase;
+}
+/* Core styles end */
+
+/* Main header styles start */
 .main-header__brand{
   display: inline-block;
   vertical-align: middle;
@@ -17,3 +33,55 @@
   vertical-align: middle;
   padding: 10px;
 }
+
+.main-navigation__item a {
+  color: #05364d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+.main-navigation__item a:hover{
+  color: #efb6df;
+}
+.main-navigation__item.active a{
+  color: #efb6df;
+}
+/* Main header styles end */
+
+/* Hero section styles start */
+.main-section{
+  padding: 100px 30px;
+}
+.main-section > div {
+  width: 50%;
+  float: left;
+}
+.main-section__image{
+  text-align: right;
+}
+.main-section__welcome{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #797979;
+}
+.main-section__introduction{
+  margin-top: 20px;
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #05364d;
+}
+.main-section__position{
+  color: #05364d;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.main-section__action{
+  8.45 -  sekund
+}
+
+/* Hero section styles end */

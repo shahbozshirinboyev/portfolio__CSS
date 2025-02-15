@@ -11,29 +11,41 @@
 
 <body>
   <!-- Header section -->
-  <header class="main-header">
-    <div class="main-header__brand">
-      <a href="index.html">
-        <img src="./images/logo.png" alt="Brand">
-      </a>
-    </div>
-    <nav class="main-navigation">
-      <ul class="main-navigation__items">
-        <li class="main-navigation__item"><a href="#">Asosiy</a></li>
-        <li class="main-navigation__item"><a href="#">Men haqimda</a></li>
-        <li class="main-navigation__item"><a href="#">Xizmatlar</a></li>
-        <li class="main-navigation__item"><a href="#">Mijozlar</a></li>
-        <li class="main-navigation__item"><a href="#">Portfolio</a></li>
-        <li class="main-navigation__item"><a href="#">Blog</a></li>
-        <li class="main-navigation__item"><a href="#">Sheriklar</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <header class="main-header">
+      <div class="main-header__brand">
+        <a href="index.html">
+          <img src="./images/logo.png" alt="Brand">
+        </a>
+      </div>
+      <nav class="main-navigation">
+        <ul class="main-navigation__items">
+          <li class="main-navigation__item active"><a href="#">Asosiy</a></li>
+          <li class="main-navigation__item"><a href="#">Men haqimda</a></li>
+          <li class="main-navigation__item"><a href="#">Xizmatlar</a></li>
+          <li class="main-navigation__item"><a href="#">Mijozlar</a></li>
+          <li class="main-navigation__item"><a href="#">Portfolio</a></li>
+          <li class="main-navigation__item"><a href="#">Blog</a></li>
+          <li class="main-navigation__item"><a href="#">Sheriklar</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
   <!-- /Header section -->
 
   <!-- Main section -->
-  <section id="main-section">
-    <h1>Asosiy qism</h1>
+  <section id="main-section" class="main-section">
+    <div class="main-section__info">
+      <h4 class="main-section__welcome to-uppercase">Salom, hammaga!</h4>
+    <h1 class="main-section__introduction to-uppercase">I am Shirinboyev</h1>
+    <h3 class="main-section__position to-uppercase">Senior (katta) dasturchi & Vlogger</h3>
+    <button type="button" class="main-section__action to-uppercase">
+      Ishlarimni ko'ring
+    </button>
+    </div>
+    <div class="main-section__image">
+      <img src="./images/my_image.png" alt="My_image">
+    </div>
   </section>
   <!-- /Main section -->
 
