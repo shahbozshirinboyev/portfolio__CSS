@@ -11,6 +11,10 @@ body{
 .to-uppercase{
   text-transform: uppercase;
 }
+
+.clearfix{
+  clear: both;
+}
 /* Core styles end */
 
 /* Main header styles start */
@@ -49,7 +53,7 @@ body{
 }
 /* Main header styles end */
 
-/* Hero section styles start */
+/* Main section styles start */
 .main-section{
   padding: 100px 30px;
 }
@@ -69,7 +73,7 @@ body{
 }
 .main-section__introduction{
   margin-top: 20px;
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 500;
   margin-bottom: 20px;
   color: #05364d;
@@ -80,8 +84,50 @@ body{
   font-weight: 300;
   margin-bottom: 20px;
 }
+.main-section__social-networks a{
+  color: #8FA1AA;
+  font-size: 28px;
+  display: inline-block;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.main-section__social-networks a:hover i {
+  color: #0071a5;
+}
 .main-section__action{
-  8.45 -  sekund
+  margin-top: 30px;
+  border: none;
+  background-color: #0071a5;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 20px 40px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-/* Hero section styles end */
+/* Main section styles end */
+
+/* Statistics section style start */
+.statistics{
+  padding-top: 100px;
+}
+.statistics__item{
+  display: inline-block;
+  width: 150px;
+  background-color: #F8FAFF;
+  text-align: center;
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+.statistics__number{
+   font-size: 27px;
+   margin-bottom: 5px;
+   color: #0071a5;
+}
+.statistics__title{
+  font-size: 16px;
+  color: #797979;
+  font-weight: 300;
+}
+/* Statistics section style end */
