@@ -1,5 +1,6 @@
 /* Core styles start */
 body{
+  margin: 0;
   font-family: sans-serif;
 }
 
@@ -32,13 +33,18 @@ body{
 }
 .button{
   border: none;
-  background-color: #0071a5;
+  background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+  background-size: 200% auto;
   color: white;
   font-weight: 500;
   font-size: 14px;
   padding: 20px 40px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.button:hover{
+  background-position: right center;
 }
 
 .blur-line{
@@ -99,6 +105,12 @@ body{
 /* Main header styles end */
 
 /* Main section styles start */
+.main-banner{
+  background-image: url('../images/bg.png');
+  background-position: center;
+  background-size: cover;
+  min-height: 890px;
+}
 .main-section{
   padding: 100px 30px;
 }
@@ -160,8 +172,12 @@ body{
 .statistics__number{
    font-size: 27px;
    margin-bottom: 5px;
-   color: #0071a5;
+   background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-size: 200% auto;
 }
+
 .statistics__title{
   font-size: 16px;
   color: #797979;
