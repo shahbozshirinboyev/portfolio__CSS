@@ -23,10 +23,10 @@ textarea:focus, input:focus{
   box-sizing: border-box;
 }
 .contact__firstname{
-  padding-right: .94rem;
+  padding-right: 1.25rem;
 }
 .contact__email{
-  padding-left: .94rem;
+  padding-left: 1.25rem;
 }
 .contact__send{
   margin-top: 1.87rem;
