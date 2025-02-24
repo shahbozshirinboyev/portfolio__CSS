@@ -166,18 +166,21 @@ body {
   color: #797979;
 }
 /* /Footer section styles */
+/* responsive styles */
+@media only screen and (max-width: 991px){
+  .container {
+    width: 92%;
+  }
+  .main-navigation {
+    display: none;
+  }
+  .footer__navigation {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .container {
     width: 96%;
   }
-  .main-navigation {
-    display: none;
-  }
-
-  /* footer navigation */
-  .footer__navigation {
-    display: none;
-  }
-  /* /footer navigation */
 }

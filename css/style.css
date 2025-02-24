@@ -338,38 +338,24 @@
   padding: 0 1.87rem;
 }
 /* Partners section style end */
-
-@media only screen and (max-width: 767px) {
-  /* main section */
+/* responsive styles */
+@media only screen and (max-width: 991px) {
+  /* Main section */
   .main-section__image {
     display: none;
   }
-  .main-banner {
-    background: none;
-    min-height: auto;
-  }
-  .main-section__action {
-    display: none;
-  }
+
   .main-section > div {
     width: 100%;
   }
-  .main-section__introduction {
-    font-size: 2.75rem;
-  }
-  .main-section__position {
-    font-size: 1.2rem;
-  }
-  /* /main section */
+  /* /Main section */
 
-  /* statistics section */
-  .statistics__item {
-    width: 100%;
-    margin-bottom: 20px;
-    margin-right: 0;
-    box-sizing: border-box;
+  /* Statistics section */
+  .statistics {
+    padding-top: 1rem;
+    text-align: center;
   }
-  /* /statistics section */
+  /* /Statistics section */
 
   /* about me section */
   .about-me {
@@ -388,8 +374,7 @@
     padding: 1.5rem 0;
   }
   .service-card {
-    width: 100%;
-    margin-right: 0;
+    width: 45%;
     margin-bottom: 20px;
   }
   /* /services section */
@@ -403,6 +388,62 @@
     float: none;
   }
   /* /clients section */
+  /* blog section */
+  .blog {
+    padding: 1.5rem 0;
+  }
+  .blog-item {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  /* /blog section */
+  /* partners section */
+  .partners {
+    display: block;
+    padding: 1.5rem 0;
+  }
+  .partner {
+    display: block;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  /* /partners section */
+}
+
+@media only screen and (max-width: 767px) {
+  /* main section */
+  .main-banner {
+    background: none;
+    min-height: auto;
+  }
+  .main-section__action {
+    display: none;
+  }
+  .main-section__introduction {
+    font-size: 2.75rem;
+  }
+  .main-section__position {
+    font-size: 1.2rem;
+  }
+  /* /main section */
+
+  /* statistics section */
+  .statistics__item {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  /* /statistics section */
+
+  /* services section */
+  .service-card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  /* /services section */
 
   /* portfolio section */
   .portfolio {
@@ -417,26 +458,10 @@
   }
   /* /portfolio section */
   /* blog section */
-  .blog {
-    padding: 1.5rem 0;
-  }
   .blog-item {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
   /* /blog section */
-
-  /* partners section */
-  .partners {
-    display: block;
-    padding: 1.5rem 0;
-  }
-  .partner {
-    display: block;
-    padding: 0;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  /* /partners section */
 }
