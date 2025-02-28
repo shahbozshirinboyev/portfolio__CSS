@@ -7,10 +7,8 @@
 }
 .main-section {
   padding: 7.5rem 1.87rem;
-}
-.main-section > div {
-  width: 50%;
-  float: left;
+  display: flex;
+  justify-content: space-between;
 }
 .main-section__image {
   text-align: right;
@@ -54,9 +52,9 @@
 /* Statistics section style start */
 .statistics {
   padding-top: 6.25rem;
+  display: flex;
 }
 .statistics__item {
-  display: inline-block;
   width: 150px;
   background-color: #f8faff;
   text-align: center;
@@ -86,11 +84,12 @@
 
 .about-me {
   padding: 6.25rem 0;
+  display: flex;
+  align-items: center;
 }
 
 .about-me > div {
-  width: 50%;
-  float: left;
+  flex: 1;
 }
 .about-me__description {
   font-size: 0.87rem;
@@ -107,9 +106,11 @@
 .services {
   padding-top: 6.25rem;
 }
+.services__cards {
+  display: flex;
+  justify-content: space-between;
+}
 .service-card {
-  display: inline-block;
-  width: 30%;
   padding: 3.75rem 1.87rem;
   background-color: #f8faff;
   margin-right: 3%;
@@ -118,7 +119,7 @@
   transition: all 0.4s ease 0s;
 }
 .service-card__image {
-  width: 120px;
+  width: 80px;
 }
 
 .service-card__title {
@@ -158,13 +159,14 @@
   padding-top: 6.25rem;
 }
 .client-item__info {
-  padding-top: 3.12rem;
   padding-left: 3.12rem;
 }
+.client-item {
+  display: flex;
+  align-items: center;
+}
 .client-item > div {
-  width: 50%;
-  float: left;
-  box-sizing: border-box;
+  flex: 1;
 }
 
 .client-item__image img {
@@ -264,7 +266,7 @@
   left: 20px;
   background: rgba(19, 69, 230, 0.9);
 }
-.portfolio-item:hover .portfolio-item__info{
+.portfolio-item:hover .portfolio-item__info {
   opacity: 1;
 }
 /* Portfolio section style end */
@@ -274,12 +276,12 @@
   padding: 6.25rem 0;
 } */
 .blog-items {
-  margin-top: 50px;
+  margin-top: 3.125rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .blog-item {
-  display: inline-block;
-  width: 30%;
   margin-right: 3%;
   box-sizing: border-box;
   overflow: hidden;
@@ -287,7 +289,7 @@
 .blog-item:hover {
   box-shadow: 0px 10px 20px rgb(5 54 77 / 10%);
 }
-.blog-item__img{
+.blog-item__img {
   overflow: hidden;
 }
 .blog-item__img img {
@@ -295,7 +297,7 @@
   vertical-align: middle;
   transition: all 0.4s ease 0s;
 }
-.blog-item:hover .blog-item__img img{
+.blog-item:hover .blog-item__img img {
   transform: scale(1.1);
 }
 .blog-item__info {
@@ -346,13 +348,7 @@
 .partners {
   padding: 6.25rem;
   display: flex;
-  gap: 1.56rem;
-  justify-content: center;
-  align-items: center;
-}
-.partner {
-  display: inline-block;
-  padding: 0 1.87rem;
+  justify-content: space-between;
 }
 /* Partners section style end */
 /* responsive styles */
@@ -369,8 +365,9 @@
 
   /* Statistics section */
   .statistics {
-    padding-top: 1rem;
+    padding-top: 0;
     text-align: center;
+    justify-content: center;
   }
   /* /Statistics section */
 
@@ -381,7 +378,7 @@
   .about-me > div {
     width: 100%;
   }
-  .about-me__image img {
+  .about-me__image {
     display: none;
   }
   /* /about me section */
@@ -390,8 +387,11 @@
   .services {
     padding: 1.5rem 0;
   }
+  .services__cards {
+    flex-wrap: wrap;
+  }
   .service-card {
-    width: 45%;
+    flex-basis: 45%;
     margin-bottom: 20px;
   }
   /* /services section */
@@ -399,6 +399,9 @@
   /* clients section */
   .clients {
     padding: 1.5rem 0;
+  }
+  .client-item {
+    flex-direction: column;
   }
   .client-item > div {
     width: 100%;
@@ -410,7 +413,10 @@
     padding: 1.5rem 0;
   }
   .blog-item {
-    width: 45%;
+    flex-wrap: wrap;
+  }
+  .blog-item {
+    flex-basis: 45%;
     margin-bottom: 20px;
   }
   /* /blog section */
@@ -420,10 +426,12 @@
     padding: 1.5rem 0;
   }
   .partner {
-    display: block;
     padding: 0;
     text-align: center;
     margin-bottom: 10px;
+  }
+  .partners {
+    flex-direction: column;
   }
   /* /partners section */
 }
@@ -446,6 +454,9 @@
   /* /main section */
 
   /* statistics section */
+  .statistics {
+    flex-direction: column;
+  }
   .statistics__item {
     width: 100%;
     margin-bottom: 20px;
@@ -456,7 +467,7 @@
 
   /* services section */
   .service-card {
-    width: 100%;
+    flex-basis: 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
@@ -475,8 +486,11 @@
   }
   /* /portfolio section */
   /* blog section */
+  .blog-items {
+    flex-direction: column;
+  }
+
   .blog-item {
-    width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
